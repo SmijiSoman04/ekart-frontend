@@ -1,0 +1,22 @@
+.banner{
+    background-image: url('https://www.edgewatermall.com/wp-content/uploads/2014/10/HOMESLIDE1EDG.jpg');
+    background-size: cover;
+    background-position: cover;
+    height: 600px;
+    width: 100%;
+}
+.card{
+    width: 250px;
+    height: 550px;
+    margin: 10px;
+    padding: 30px;
+}
+.card-img-top{
+    width: 100%;
+    height:200px;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+

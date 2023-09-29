@@ -1,0 +1,32 @@
+                            Ekart - Frontend
+       
+
+        1.Create a new folder Ekart
+        2.Inside in it create a new angular project - ng new eKart-frontend
+        3.install 3rd party libraries
+            -> MD Bootastrap -npm i mdb-angular-ui-kit
+            ->fontAwsome - npm i @fortawesome/fontawesome-free
+            ->googlefonts - @import paste on style
+        4.Lazy loading -
+                        Lazy loading is a technology of angular that allows you to load JavaScript components when a specific route is activated. It improves application load time speed by splitting the application into many bundles. When the    user navigates by the app, bundles are loaded as needed.
+
+                        Lazy loading helps to keep the bundle size small, which helps reduce load times. We must use the class decorator to create an Angular module @NgModule, and the decorator uses a metadata object that defines the module.
+        
+        
+         [Lazy loading is a technique used in Angular to load components or modules only when they are needed, reducing the initial load time of the application. It works by using a combination of the Angular framework and the browser's lazy loading mechanism. When a component or module is requested, the Angular framework checks if it's already loaded and if not, it loads it from the server. This helps to reduce the initial load time and improve the performance of the application.]
+        
+        5.Create a new module in Angular - here we create product module for implementing Lazy loading
+               ->ng g m products --route products --module app.module
+        6.create component in lazy loading module(products module)
+                ->ng g c products/allProducts
+                ->ng g c products/viewProducts
+                ->ng g c products/wishlist
+                ->ng g c products/cart
+
+        7.components thats not included in the lazy loading module
+                ->ng g c header
+                ->ng g c footer
+                ->ng g c pageNotFound
+
+        8.Setup path
+           localhost 4200 - all products =>localhost:4200/allproduts
